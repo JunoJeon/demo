@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-family: 'PilseungGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*상단 메뉴바 글씨체*/
+.font_mu, .font_log{
+	font-family: 'yg-jalnan';
+}
+
+/*폰트색상 화이트*/
+.font_mu {
+	color: white;
+	font-size: 1em;
+}
+
+/*폰트색상 그레이*/
+.font_log {
+	color: gray;
+	font-size: 0.8em;
+}
+
+.font_yg {
+	font-family: 'yg-jalnan';
+}
+
+.font_ps {
+	font-family: 'PilseungGothic';
+}
+
+.font_cf {
+	font-family: 'Cafe24Ssurround';
+}
+
+@media (max-width: 600px) {
+	 .font_mu {
+		font-size: 0.6em;
+	}
+	
+	/*폰트색상 그레이*/
+	.font_log {
+		font-size: 0.4em;
+	}	
+}

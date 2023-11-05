@@ -1,0 +1,171 @@
+@import "reset.css";
+@import "font.css";
+
+/*main_warp 스타일*/
+.main_warp_left, .main_warp_center, .main_warp_right {
+	padding-top: 50px;
+    float: left;
+    box-sizing: border-box;
+}
+/*main_warp_left 스타일 정의*/
+.main_warp_left {
+    width: 13%;
+    padding-left: 10px;
+}
+.main_warp_left .main_left_li h3{
+	color: white;		/*h3 폰트 색상, 크기*/
+	font-size: 1.1em;
+}
+.main_warp_left .main_left_li ul li {
+	margin-top: 25px;
+}
+.main_warp_left .main_left_li ul li a{
+	color: gray;		/*a태그 폰트 색상, 크기*/
+	font-size: 0.9em;
+}
+.main_warp_left .main_left_li ul li a:hover{
+	color: cyan;		/*a태그 폰트 색상, 크기*/
+}
+
+/*main_warp_center 스타일 정의*/
+.main_warp_center {
+    width: 57%;
+}
+.main_warp_center .main_center_top .font_yg{
+	color: white;
+}
+.main_center_li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    
+    margin-top: 25px;
+    width: 50%;
+}
+.main_warp_center .main_center_li .center_li_sub {
+	padding-top: 10px;
+}
+.center_sub_name, .center_sub_gen, .center_sub_ex {
+	display: inline-block;
+	max-width: 406px; /* 최대 가로 사이즈를 설정 */
+	
+  	color: antiquewhite;
+}
+.center_sub_gen {
+	position: relative;
+	float: right;    
+    font-size: 0.7em;
+    left: -60px;
+}
+.center_sub_ex {
+	padding-top: 10px;
+  	
+  	max-height: 3em;  /* 2~3줄만 보이게 사이즈 설정 */
+    white-space: nowrap; /* 텍스트가 요소 내에서 줄 바꿈하지 않도록 설정 */
+    overflow: hidden; /* 넘어간 내용을 숨깁니다. */
+    text-overflow: ellipsis; /* 내용이 잘릴 때 '...'으로 표시합니다. */
+    
+    font-size: 0.7em;
+    color:gray
+}
+/*가격란 크기 색상 위치정의*/
+.center_li_pay {
+	padding-top : 10px;
+	padding-bottom: 10px;
+	display: flex;
+}
+.center_li_pay li {
+	padding-right: 10px;
+	color: white;
+}
+/*가격 변동시 색상 크기 취소선*/
+.center_li_pay #pay1 {
+	color: yellow;
+}
+.center_li_pay #pay2 {
+	padding-top: 2px;
+	font-size: 0.8em;
+	text-decoration: line-through;
+}
+.center_li_pay #pay3 {
+	font-size: 0.5em;
+	color: darkgray;
+}
+
+.main_warp_right {
+    width: 30%;
+}
+
+/*이미지 크기 정의*/
+.main_center_li img {
+    width: 406px; /* 이미지의 너비 설정 */
+    max-height: 228px; /* 이미지의 높이 자동으로 조정 */
+    overflow: hidden;
+    transition: opacity 0.3s; /* 호버 효과를 부드럽게 만들기 위한 트랜지션 */
+}
+
+.main_center_li:hover img {
+    opacity: 0.7; /* 호버 시 이미지의 투명도를 줄입니다. */
+}
+
+/*신규 인기 추천 적용*/
+.new {
+	margin-top: 10px;
+	width: 25px;
+	height: 15px;
+	background-color: dimgray;
+	color: cyan;
+}
+.pop {
+	margin-top: 10px;
+	width: 25px;
+	height: 15px;
+	background-color: dimgray;
+	color: yellow;
+}
+.good {
+	margin-top: 10px;
+	width: 25px;
+	height: 15px;
+	background-color: dimgray;
+	color: lawngreen;
+}
+/*p태그 글씨크기적용*/
+.main_center_li .p_cla li p {
+	line-height: 15px;
+	font-size: 0.5em;
+	text-align: center;
+}
+/*p태그 ul가로정렬*/
+.main_center_li .p_cla {
+	display: flex;
+}
+.main_center_li .p_cla li {
+	padding-right: 5px;
+}
+/*hr 크기, 위지정의*/
+div hr {
+	position: relative;
+	width: 90%;
+	left: -30px;
+	height:1px;
+    border:0;
+	background: gray;
+}
+.main_warp_right .header { font-size: 14px; padding: 15px 0; background: #F18C7E; color: white; text-align: center;  }
+ 
+.main_wrap_right .chat { padding-bottom: 80px;  }
+.main_wrap_right .chat ul { width: 100%; list-style: none; }
+.main_wrap_right .chat ul li { width: 100%; }
+.main_wrap_right .chat ul li.left { text-align: left; }
+.main_wrap_right .chat ul li.right { text-align: right; }
+ 
+.main_wrap_right .chat ul li > div { font-size: 13px; }
+.main_wrap_right .chat ul li > div.sender { margin: 10px 20px 0 20px; font-weight: bold; }
+.main_wrap_right .chat ul li > div.message { display: inline-block; word-break:break-all; margin: 5px 20px; max-width: 75%; border: 1px solid #888; padding: 10px; border-radius: 5px; background-color: #FCFCFC; color: #555; text-align: left; }
+ 
+.main_wrap_right .input-div { position: fixed; bottom: 0; width: 100%; background-color: #FFF; text-align: center; border-top: 1px solid #F18C7E; }
+.main_wrap_right .input-div > textarea { width: 100%; height: 80px; border: none; padding: 10px; }
+ 
+.format { display: none; }

@@ -1,0 +1,81 @@
+@import "reset.css";
+@import "font.css";
+
+/*메인 전체 스타일*/
+body {
+	position: absolute;
+	background-color: #1B222E;
+	width: 100%;
+	height: 1000px;
+}
+
+/*nav 메뉴바 스타일*/
+.nav_warp_top {
+	position: fixed;
+	display: flex;
+	align-items: center; /* 내용을 수직 가운데 정렬 */
+	justify-content: space-between; /* 내용을 양쪽으로 분산 배치 */
+	
+	width: 100%;
+	height: 100px;
+	background-color: #020715;
+}
+
+/*nav 로고, 메뉴 가로정렬*/
+.nav_warp_lo, .nav_warp_mu { display: inline-block; vertical-align: top; /* 원하는 정렬 방식에 따라 수정 가능 */ }
+
+/*logo 위치조정*/
+.nav_warp_lo {
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+
+/*nav li 스타일*/
+.nav_warp_mu a {
+	position: relative;
+	padding: 20px;
+	top: 35px;
+	left: 10px;
+}
+
+/*ul1과 ul2가로정렬*/
+.nav_warp_ul1, .nav_warp_ul2 { display: inline-block; vertical-align: top; /* 원하는 정렬 방식에 따라 수정 가능 */ }
+
+/*nav ul2 스타일*/
+.nav_warp_ul2 {
+    position: relative;
+    
+    top : 5px;
+}
+
+/*login, src 가로정렬*/
+.nav_login, .nav_src { display: inline-block; vertical-align: top; /* 원하는 정렬 방식에 따라 수정 가능 */ }
+.nav_logout { position: relative; left : 250px; }
+
+/*로그인과회원가입 가로정렬 */
+.nav_login_mu { display: flex;  /*가로 정렬을 위해 flex 사용 */ }
+.nav_login_mu li a:hover { color : white;}
+.nav_logout_mu { display : flex; }
+.nav_logout_mu li a:hover { color : white;}
+
+/*login,src 간격조정, login사이 간격조정*/
+.nav_login_mu 	 {margin-right: 10px;}
+.nav_login_mu li {padding:10px;}
+.nav_logout_mu 	 {margin-right: 10px;}
+.nav_logout_mu li {padding:10px;}
+
+/*src내 div가로정렬, 간격조정*/
+.nav_src div 	 { float: left;  padding:5px; }
+/*버튼 스타일*/
+.nav_src .nav_src_bt button{ position: relative; top: -5px; background: transparent; border: none;}
+.nav_src_bt button:hover { /* 버튼에 마우스올렸을때 모양변경*/
+    cursor: pointer;
+}
+/*input박스 밑줄남기기*/
+.nav_src .nav_src_in input { background: transparent;  border-width: 0 0 1px; color: white;}
+
+iframe {
+	margin-top : 100px;
+	padding-top: 50px;
+}
