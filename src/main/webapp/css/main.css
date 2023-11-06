@@ -56,7 +56,7 @@
 	position: relative;
 	float: right;    
     font-size: 0.7em;
-    left: -60px;
+    left: -130px;
 }
 .center_sub_ex {
 	padding-top: 10px;
@@ -147,8 +147,8 @@
 /*hr 크기, 위지정의*/
 div hr {
 	position: relative;
-	width: 90%;
-	left: -30px;
+	width: 70%;
+	left: -70px;
 	height:1px;
     border:0;
 	background: gray;

@@ -41,7 +41,7 @@
 				</li>
 			</ul>
 			<ul class = "center_li_pay font_yg">
-				<li>50000원</li>
+				<li>50,000원</li>
 				<li></li>
 			</ul>
 			<hr>
